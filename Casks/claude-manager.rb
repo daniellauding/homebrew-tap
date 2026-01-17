@@ -1,6 +1,6 @@
 cask "claude-manager" do
-  version "1.4.1"
-  sha256 "f450723d40d319a560b1870c8a6ba0d108a557daa9d2987f22cda5bdf3ab6b49"
+  version "1.4.2"
+  sha256 "1f742531d7a4399491d1218f2f4774706e83c6bbcebba80099eeb8d16482a922"
 
   url "https://github.com/daniellauding/claude-manager/releases/download/v#{version}/ClaudeManager-v#{version}.zip"
   name "Claude Manager"
