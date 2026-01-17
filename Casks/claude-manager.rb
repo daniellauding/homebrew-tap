@@ -20,6 +20,12 @@ cask "claude-manager" do
 
   app "ClaudeManager.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/ClaudeManager.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/.claude/snippets.json",
   ]
